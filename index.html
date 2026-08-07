@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es-PA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DTR Abogados, Consultores y Asociados — Panamá. Estamos actualizando nuestra página web. Contactanos por WhatsApp o correo mientras tanto." />
+    <meta name="theme-color" content="#232a5e" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DTR Abogados" />
+    <meta property="og:title" content="DTR Abogados — Volvemos pronto" />
+    <meta property="og:description" content="Estamos actualizando nuestra página web. Contactanos por WhatsApp o correo mientras tanto." />
+    <meta property="og:locale" content="es_PA" />
+    <meta property="og:image" content="/logo-dtr.svg" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>DTR Abogados — Volvemos pronto</title>
+
+    <style>
+      :root {
+        --dtr-navy: #232a5e;
+        --dtr-navy-dark: #181f4a;
+        --dtr-gold: #b8954a;
+        --dtr-gold-light: #e6c98a;
+        --dtr-gold-dark: #8a6d33;
+        --dtr-cream: #fdfaf2;
+        --dtr-cream-alt: #f5f0e3;
+        --dtr-line: rgba(184, 149, 74, 0.28);
+        --texto: #2a2520;
+        --texto-claro: #5a5045;
+        --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+        --font-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--dtr-cream);
+        background-image: repeating-linear-gradient(
+          0deg,
+          transparent 0,
+          transparent 4px,
+          rgba(184, 149, 74, 0.035) 4px,
+          rgba(184, 149, 74, 0.035) 5px
+        );
+        color: var(--texto);
+        font-family: var(--font-sans);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        min-height: 100vh;
+      }
+
+      .page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem 1.5rem;
+      }
+
+      .card {
+        max-width: 640px;
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid var(--dtr-line);
+        border-radius: 14px;
+        padding: 3rem 2.5rem;
+        text-align: center;
+        box-shadow: 0 12px 32px rgba(35, 42, 94, 0.08);
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto 2rem;
+        max-width: 260px;
+        width: 100%;
+        height: auto;
+      }
+
+      .kicker {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--dtr-gold-dark);
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-family: var(--font-serif);
+        font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+        color: var(--dtr-navy);
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        margin: 0 0 1rem 0;
+      }
+
+      h1 em {
+        font-style: italic;
+        color: var(--dtr-gold-dark);
+      }
+
+      .lede {
+        font-size: 1.08rem;
+        color: var(--texto-claro);
+        max-width: 460px;
+        margin: 0 auto 2rem;
+        line-height: 1.6;
+      }
+
+      hr.divider-gold {
+        border: 0;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, var(--dtr-gold), transparent);
+        margin: 2rem auto;
+        max-width: 180px;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+      }
+
+      .cta {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1.5rem;
+        border-radius: 6px;
+        font-family: var(--font-sans);
+        font-size: 0.98rem;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1.5px solid transparent;
+        cursor: pointer;
+        transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+      }
+
+      .cta-whatsapp {
+        background: #25d366;
+        color: #ffffff;
+        border-color: #25d366;
+      }
+      .cta-whatsapp:hover {
+        background: #1ea856;
+        border-color: #1ea856;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+      }
+
+      .cta-outline {
+        background: transparent;
+        color: var(--dtr-navy);
+        border-color: var(--dtr-navy);
+      }
+      .cta-outline:hover {
+        background: var(--dtr-navy);
+        color: #ffffff;
+        transform: translateY(-1px);
+      }
+
+      .contact-info {
+        font-size: 0.9rem;
+        color: var(--texto-claro);
+        line-height: 1.9;
+      }
+      .contact-info strong {
+        color: var(--dtr-navy);
+        font-weight: 600;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        font-size: 0.78rem;
+        color: var(--texto-claro);
+        border-top: 1px solid var(--dtr-line);
+      }
+
+      footer p {
+        margin: 0.25rem 0;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--dtr-gold);
+        outline-offset: 3px;
+        border-radius: 2px;
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 2rem 1.5rem;
+        }
+        .logo {
+          max-width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <main>
+        <div class="card">
+          <img
+            src="/logo-dtr.svg"
+            alt="DTR Abogados, Consultores y Asociados"
+            class="logo"
+            width="260"
+            height="130"
+          />
+
+          <div class="kicker">DTR — Abogados, Consultores y Asociados</div>
+
+          <h1>Estamos renovando<br /><em>nuestra página web.</em></h1>
+
+          <p class="lede">
+            Volvemos pronto con la nueva imagen y todas las áreas de práctica.
+            Mientras tanto, atendemos consultas por WhatsApp y correo — respuesta
+            en menos de 24 horas hábiles.
+          </p>
+
+          <div class="cta-row">
+            <a
+              href="https://wa.me/50700000000?text=Hola%20DTR%20Abogados%20%F0%9F%91%8B%0A%0AMi%20nombre%20es%3A%20________%0AEscribo%20desde%20la%20web%20porque%20estoy%20interesado%20en%3A%20________%0A%0AMe%20gustar%C3%ADa%20agendar%20una%20asesor%C3%ADa.%20Mis%20datos%3A%0A%E2%80%A2%20Correo%3A%0A%E2%80%A2%20Pa%C3%ADs%20desde%20donde%20escribo%3A%0A%E2%80%A2%20Breve%20descripci%C3%B3n%20del%20caso%3A%0A%0AGracias."
+              class="cta cta-whatsapp"
+              target="_blank"
+              rel="noopener"
+            >
+              Escribinos por WhatsApp
+            </a>
+            <a href="mailto:info@dtrabogados.com" class="cta cta-outline">
+              Enviar un correo
+            </a>
+          </div>
+
+          <hr class="divider-gold" />
+
+          <div class="contact-info">
+            <div><strong>Ciudad de Panamá</strong> · Panamá</div>
+            <div>Consulta inicial <strong>sin costo</strong></div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>© <span id="year"></span> DTR Abogados, Consultores y Asociados</p>
+        <p>Página en actualización · vuelve pronto</p>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
